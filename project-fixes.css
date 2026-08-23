@@ -1,4 +1,4 @@
-/* Ajustes de composición para las tres tarjetas de widgets. */
+/* Ajustes de composición para las tarjetas de proyectos. */
 .art-positions,
 .art-keys,
 .art-values {
@@ -47,4 +47,53 @@
   border-bottom: 1px solid rgba(220, 236, 251, .45);
   color: #dcecfb;
   font: 14px "DM Mono", monospace;
+}
+
+/* Presentación profesional de la lógica de cada solución. */
+.project-details {
+  margin-top: 18px;
+  border-top: 1px solid var(--line);
+  padding-top: 13px;
+}
+
+.project-details summary {
+  cursor: pointer;
+  color: var(--blue);
+  font: 600 11px/1.4 "DM Mono", monospace;
+  letter-spacing: .02em;
+  list-style: none;
+}
+
+.project-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.project-details summary::after {
+  content: " +";
+}
+
+.project-details[open] summary::after {
+  content: " −";
+}
+
+.project-details div {
+  margin-top: 14px;
+}
+
+.project-details p {
+  margin: 0 0 10px !important;
+  color: var(--slate);
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+.project-details strong {
+  color: var(--navy);
+  font-weight: 700;
+}
+
+@media (max-width: 800px) {
+  .project-details {
+    margin-top: 15px;
+  }
 }
