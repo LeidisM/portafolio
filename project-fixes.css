@@ -1,0 +1,50 @@
+/* Ajustes de composición para las tres tarjetas de widgets. */
+.art-positions,
+.art-keys,
+.art-values {
+  position: relative;
+  overflow: hidden;
+}
+
+.art-positions b,
+.art-keys b,
+.art-values b {
+  position: absolute;
+  right: 24px;
+  bottom: 22px;
+  margin: 0;
+  font: 500 22px/1 "DM Mono", monospace;
+  letter-spacing: -0.09em;
+  text-align: right;
+}
+
+.position-dot {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  border: 2px solid var(--blue);
+  border-radius: 50%;
+  background: var(--white);
+}
+
+.dot-one { top: 26%; left: 18%; }
+.dot-two { top: 46%; left: 40%; background: var(--blue); }
+.dot-three { top: 20%; left: 61%; }
+
+.art-keys > span {
+  display: block;
+  color: var(--blue);
+  font: 64px/1 "DM Mono", monospace;
+}
+
+.art-values {
+  padding: 25px;
+}
+
+.art-values strong {
+  display: block;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(220, 236, 251, .45);
+  color: #dcecfb;
+  font: 14px "DM Mono", monospace;
+}
