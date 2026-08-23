@@ -1,0 +1,15 @@
+/* Casos de portafolio: información técnica sin datos de clientes. */
+.project-info p:not(.project-type) { margin: 10px 0 0; color: var(--muted); font-size: 12px; line-height: 1.65; }
+.project-link, .project-note { display: inline-block; margin-top: 17px; font-family: "DM Mono", monospace; font-size: 10px; letter-spacing: 0.02em; }
+.project-link { color: var(--ink); font-weight: 500; text-decoration-color: var(--coral); text-underline-offset: 4px; }
+.project-note { color: var(--muted); }
+
+.portfolio-callout { margin: 28px 0 0; color: var(--muted); font-size: 13px; text-align: right; }
+.portfolio-callout a { color: var(--ink); font-weight: 700; text-decoration-color: var(--coral); text-underline-offset: 4px; }
+.art-positions { background: #dfff56; }
+.art-positions b, .art-keys b, .art-values b { position: absolute; right: 24px; bottom: 23px; color: var(--ink); font: 500 24px/1 "DM Mono", monospace; letter-spacing: -0.09em; text-align: right; }
+.position-dot { position: absolute; width: 44px; height: 44px; border: 2px solid var(--ink); border-radius: 50%; background: var(--paper); }
+.dot-one { top: 25%; left: 19%; }.dot-two { top: 45%; left: 39%; background: var(--coral); }.dot-three { top: 22%; left: 60%; }
+.art-keys { padding: 27px; background: #f1d8bc; }.art-keys > span { color: var(--coral); font: 64px/1 "DM Mono", monospace; }
+.art-values { padding: 26px; background: #4d6e69; color: var(--lime); }.art-values strong { display: block; padding: 6px 0; border-bottom: 1px solid rgba(223,255,86,.45); font: 15px "DM Mono", monospace; }.art-values b { color: var(--lime); }
+@media (max-width: 800px) { .portfolio-callout { text-align: left; } }
